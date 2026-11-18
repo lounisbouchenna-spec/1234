@@ -219,7 +219,7 @@ with tab2:
             st.write(f"- Bollinger : `{last['BB_Lower']:.2f}` — `{last['BB_Upper']:.2f}`")
             st.write(f"- ATR (14j) : `{last['ATR']:.2f}` | Pivot : `{pivot:.2f}`")
             with tab3:
-    st.subheader("Macroéconomie, Inter-Marchés & Calendrier Investing.com")
+            st.subheader("Macroéconomie, Inter-Marchés & Calendrier Investing.com")
     macro_tickers = {"Taux US 10Y": "^TNX", "DXY (Dollar)": "DX-Y.NYB", "Or": "GC=F", "Pétrole WTI": "CL=F", "Cuivre": "HG=F", "Crédit HYG": "HYG", "SPX Equal-Weight": "RSP", "Small Caps IWM": "IWM"}
     m_cols = st.columns(4)
     m_prices = {}
