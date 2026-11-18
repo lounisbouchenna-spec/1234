@@ -159,7 +159,7 @@ with tab1:
                     resume_entreprises.append(f"{nom_ent} ({zone}): {var_ent:+.2f}%, résultats le {date_res}")
                 except Exception:
                     st.write(f"• **{nom_ent}** : Indisponible")
-                      st.divider()
+    st.divider()
     st.subheader("3. Diagnostic Stratégique Complet (Macro + Entreprises + Géopolitique)")
     news_list = get_news()
     with st.expander("📰 Voir les 9 dernières dépêches Macro, Conflits & Entreprises"):
