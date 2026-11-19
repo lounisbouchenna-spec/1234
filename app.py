@@ -9,6 +9,52 @@ from groq import Groq
 from google import genai
 
 st.set_page_config(page_title="Terminal Pro Marchés - 10 Piliers", layout="wide")
+st.markdown("""
+<style>
+/* Arrière-plan Wall Street avec voile sombre pour garder une lisibilité parfaite */
+.stApp {
+    background: linear-gradient(rgba(8, 12, 22, 0.84), rgba(8, 12, 22, 0.90)),
+                url("https://unsplash.com");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Cartes de métriques façon terminal Bloomberg / Wall Street */
+[data-testid="stMetric"] {
+    background-color: rgba(17, 24, 39, 0.85);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 10px;
+    padding: 12px 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Titres dorés / ambre Wall Street */
+h1, h2, h3 {
+    color: #FBBF24 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Boutons d'analyse IA stylisés */
+.stButton > button {
+    background: linear-gradient(90deg, #D97706, #F59E0B);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+}
+
+/* Barre d'onglets translucide */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: rgba(17, 24, 39, 0.8);
+    border-radius: 8px;
+    padding: 4px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🏛️ Terminal Pro d'Analyse des Marchés (10 Piliers)")
 
 st.sidebar.header("⚙️ Clés API IA (Gratuites)")
